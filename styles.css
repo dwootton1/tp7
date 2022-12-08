@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&family=Roboto+Slab:wght@400;700&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #91855d;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+#nav {
+  width: 100%;
+  height: 2rem;
+  background-color: grey;
+}
+
+#nav a {
+  font-size: 80%;
+  text-decoration: none;
+  padding-right: 1rem;
+  
+  
+}
+
+#header{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: none;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+
+
+
+
+.copyright {
+  font-family: Arial;
+  font-size: 9px;
+  font-style: italic;
+}
+
+#ingredients {
+  display: inline;
+  background-color: violet;
+  position: relative; 
+  top: 0;
+  left 0;
+  witdh: 30vh;
+  height: 3.1 rem;
+    
+  
+}
+
+
+#equipment{
+  display: inline;
+  background-color: Gray;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  
+}
+
+
+
+#directions{
+  display: inline;
+  background-color: Lightgray;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30vh;
+  height: 3.1 rem
+  }
+
+ol {
+  margin-top: none;
+  font-size: 20px
+  
+}
+
+#recipeColumns {
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ebe4d8;
+  padding-bottom: 6vh;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.7);
+}
+
+#header h1 {
+  font-family: Arial, Arial, Arial;
+  color: Red; 
+  text-transform: uppercase;
+  font-size: 300%; 
+  padding: 0;
+  margin: 0 0 2vw 2vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+   
+}
+
+#header h1.tp {
+  font-size: 100%;
+  
+}
+
+#header h1.black {
+  color: black; 
+}
+
+#header h4 {
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+  color: green;
+}
+
+
+#recipeColumns div#ingredients { flex-basis: 28%; }
+#recipeColumns div#equipment { flex-basis: 20%; }
+#recipeColumns div#directions { flex-basis: 50%; }
+
+#recipeColumns ul,
+#recipeColumns ol {
+  padding-left: 1.1em;
+}
+
+ul, ol {
+	display: block;
+}
+
+
+@media screen and (orientation: portrait) {
+
+  
+  #recipeColumns {
+    padding: 1vh 2vh 2vh 2vh;
+    display: block;
+  }
+  
+  
+  #recipeColumns div {
+    position: relative;
+    margin: 2.5vh 0 5vh 0;
+    font-size: 120%;
+  }
