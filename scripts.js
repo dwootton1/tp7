@@ -54,7 +54,7 @@ function Recipe(recipeName, contributorName, imageURL, ingredientsURL, equipment
 Guac = new Recipe(
 	"Guacamole", 
 	"Doug", 
-	" ", 
+	"https://st.depositphotos.com/1692343/3745/i/950/depositphotos_37451229-stock-photo-green-homemade-guacamole-with-tortilla.jpg ", 
 	"ingredients.html", 
 	"equipment.html", 
 	"directions.html"
@@ -63,7 +63,7 @@ Guac = new Recipe(
 
 window.onload = function() {
   
-  document.querySelector("firstRecipe").onclick = function() {
+  document.querySelector("#firstRecipe").onclick = function() {
     Guac.displayrecipe();
   }
   
